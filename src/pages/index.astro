@@ -1,16 +1,21 @@
 ---
-
+import MainLayout from "../layout/MainLayout.astro";
+const name = "Rosmelle";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout
+  title="Rosmelle Cuevas"
+  seoTitle="Rosmelle Cuevas, Frontend Engineer Portfolio"
+  seoDesc="Hello, I'm Rosmelle Cuevas. I am deeply passionate about creating intuitive & aesthetically pleasing digital experiences. "
+>
+        <div class="w-6/12 mx-auto relative">
+          <img  class="h-90 object-cover rounded-m" src="/src/assets/bg-vector.png" alt="">
+          <h1 class="p-5 mt-20 text-xs sm:text-sm md:text-base lg:text-2xl xl:text-4xl absolute inset-0 flex">Hello, I'm Rosmelle Cuevas. <br>I am deeply passionate about creating intuitive & aesthetically pleasing digital experiences.</h1>
+          <div class="inline-flex item-center">
+          <a href="/about">View Full Profile </a>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" /></svg>
+        </div>
+        </div>
+</MainLayout>
+
